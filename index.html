@@ -17,60 +17,64 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | News homepage</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      p{
+      p {
         font-size: 22px;
       }
-      h1, h3{
+      h1,
+      h3 {
         font-weight: 800;
       }
-      #readMoreBtn:hover{
+      #readMoreBtn:hover {
         background-color: black;
       }
-      #readMoreBtn{
-        color: white; 
-        background-color: hsl(5, 85%, 63%); 
-        width:50%; height:20%;
+      #readMoreBtn {
+        color: white;
+        background-color: hsl(5, 85%, 63%);
+        width: 50%;
+        height: 20%;
       }
-      h3:hover{
+      h3:hover {
         color: hsl(35, 77%, 62%);
         cursor: pointer;
       }
-      h5:hover{
+      h5:hover {
         color: hsl(5, 85%, 63%);
         cursor: pointer;
       }
-      h4:hover{
+      h4:hover {
         color: hsl(35, 77%, 62%);
         cursor: pointer;
       }
-      #cardNumber{
+      #cardNumber {
         opacity: 40%;
       }
-      #cardNumber:hover{
+      #cardNumber:hover {
         color: black;
       }
-      #navBarLink:hover{
+      #navBarLink:hover {
         color: hsl(5, 85%, 63%);
         cursor: pointer;
       }
     </style>
   </head>
-  <body style="font-family:'Inter', sans-serif;">
+  <body style="font-family: 'Inter', sans-serif; background-color:hsl(36, 100%, 99%)">
     <div class="container">
-    
-    
+      <br><br>
       <!-- Stikcytop navbar start -->
       <nav class="navbar bg-body-tertiary d-lg-none d-md-block">
         <div class="container-fluid">
-          <p style="font-size: 60px; font-family: '';"><b>W.</b></p>
+          <img src="./assets/images/logo.svg" alt="Logo">
           <button
             class="navbar-toggler"
             type="button"
@@ -85,7 +89,9 @@
             tabindex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header"style="display: flex; justify-content:end;">
+            <div
+              class="offcanvas-header"
+              style="display: flex; justify-content: end">
               <button
                 type="button"
                 class="btn-close"
@@ -95,7 +101,8 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">New</a>
@@ -109,16 +116,16 @@
                 <li class="nav-item">
                   <a href="#" class="nav-link">Categories</a>
                 </li>
+              </ul>
             </div>
           </div>
         </div>
       </nav>
       <!-- StickyNav end -->
-
-
-      <nav class="navbar navbar-expand-lg bg-body-tertiary d-none d-xl-block d-sm-none">
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary d-none d-xl-block d-sm-none">
         <div class="container-fluid">
-          <p style="font-size:  60px ; font-family: '';"><b>W.</b></p>
+          <img src="./assets/images/logo.svg" alt="Logo">
           <div
             class="collapse navbar-collapse d-flex justify-content-end"
             id="navbarNavAltMarkup">
@@ -132,86 +139,99 @@
           </div>
         </div>
       </nav>
-    <div class="continer-fluid">
-      <div class="row" style="column-gap: 2rem;">
-        <div class="col-lg-8">
-          <div class="row w-100%">
-            <img src="./assets/images/image-web-3-desktop.jpg" alt="Desktop Image" class="img-fluid d-none d-xl-block d-sm-none" style="width: 100%;"/>
-            <img src="./assets/images/image-web-3-mobile.jpg" alt="Mobile hero image" class="img-fluid d-lg-none d-md-block">
-          </div>
-          <div class="row"><br></div>
-          <div class="row">
-            <div class="col-lg-6">
-              <h1 style="font-size: 70px;">The Bright Future of Web 3.0?</h1></div>
-            <div class="col">
-              <p style="font-size: 18px; line-height: 2;">
-                We dive into the next evolution of the web that claims to put
-                the power of the platforms back into the hands of the people.
-                But is it really fulfilling its promise?
-              </p>
-              <br />
-              <div class="w-100 d-lg-none d-md-block"><br /></div>
-              <button class="btn rounded-0" id="readMoreBtn">
-                READ MORE
-              </button>
-              <div class="w-100 d-lg-none d-md-block"><br /></div>
-              <div class="w-100 d-lg-none d-md-block"><br /></div>
-              <div class="w-100 d-lg-none d-md-block"><br /></div>
-              
+      <br><br>
+      <div class="continer-fluid">
+        <div class="row" style="column-gap: 2rem">
+          <div class="col-lg-8">
+            <div class="row w-100%">
+              <img
+                src="./assets/images/image-web-3-desktop.jpg"
+                alt="Desktop Image"
+                class="img-fluid d-none d-xl-block d-sm-none"
+                style="width: 100%"
+              />
+              <img
+                src="./assets/images/image-web-3-mobile.jpg"
+                alt="Mobile hero image"
+                class="img-fluid d-lg-none d-md-block"
+              />
+            </div>
+            <div class="row"><br /></div>
+            <div class="row">
+              <div class="col-lg-6">
+                <h1 style="font-size: 70px">The Bright Future of Web 3.0?</h1>
+              </div>
+              <div class="col">
+                <p style="font-size: 18px; line-height: 2">
+                  We dive into the next evolution of the web that claims to put
+                  the power of the platforms back into the hands of the people.
+                  But is it really fulfilling its promise?
+                </p>
+                <br />
+                <div class="w-100 d-lg-none d-md-block"><br /></div>
+                <button class="btn rounded-0" id="readMoreBtn">
+                  READ MORE
+                </button>
+                <div class="w-100 d-lg-none d-md-block"><br /></div>
+                <div class="w-100 d-lg-none d-md-block"><br /></div>
+                <div class="w-100 d-lg-none d-md-block"><br /></div>
+              </div>
             </div>
           </div>
+
+          <div
+            class="col mx-2"
+            style="background-color: black; color: white; height: max-content">
+            <br />
+            <h1 style="color: hsl(35, 77%, 62%)">New</h1>
+            <br />
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p style="opacity: 0.5">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+            <br />
+            <hr />
+            <br />
+            <h4 style="font-weight: 800">The Downsides of AI Artistry</h4>
+            <p style="opacity: 0.5; font-size: 18px">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+            <br />
+            <hr />
+            <br />
+            <h3>Is VC Funding Drying Up?</h3>
+            <p style="font-size: 20px; opacity: 0.5">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+            <br />
+          </div>
         </div>
-      
-          <div class="col p-8" style="background-color: black; color: white; height: max-content;">
-          <br>
-          <h1 style="color: hsl(35, 77%, 62%)">New</h1>
-          <br>
-          <h3>Hydrogen VS Electric Cars</h3>
-          <p style="opacity: .5;">Will hydrogen-fueled cars ever catch up to EVs?</p>
-          <br>
-          <hr />
-          <br>
-          <h4 style="font-weight: 800;">The Downsides of AI Artistry</h4>
-          <p style="opacity: .5; font-size: 18px">
-            What are the possible adverse effects of on-demand AI image
-            generation?
-          </p>
-          <br>
-          <hr />
-          <br>
-          <h3>Is VC Funding Drying Up?</h3>
-          <p style="font-size: 20px; opacity: .5;">
-            Private funding by VC firms is down 50% YOY. We take a look at what
-            that means.
-          </p>
-          <br>
-        </div>
-      </div>
-        
-        <div class="row"><br></div>
+
+        <div class="row"><br /></div>
         <div class="w-100 d-lg-none d-md-block"><br /></div>
         <div class="w-100 d-lg-none d-md-block"><br /></div>
         <div class="w-100 d-lg-none d-md-block"><br /></div>
         <div class="row">
-          <div class="col"style="display: flex; flex-wrap:nowrap;">
-            <div class="card mb-3" style="max-width: 540px; border: none;">
+          <div class="col d-flex justify-content-center">
+            <div class="card mb-3" style="max-width: 540px; border: none">
               <div class="row g-0">
-                <div class="col-md-4">
+                <div class="col-4 d-flex justify-content-center">
                   <img
                     src="/assets/images/image-retro-pcs.jpg"
                     class="img-fluid rounded-0"
                     alt="retroPCs"
-                    
-                  />
+                    width="105px"/>
                 </div>
-                <div class="col-md-8">
+                <div class="col">
                   <div class="card-body pt-0">
                     <h3 class="card-title" id="cardNumber">01</h3>
-                    <h5 class="card-text" style="font-weight: 800;">
+                    <h5 class="card-text" style="font-weight: 800">
                       <b>Reviving Retro PCs</b>
-                    </h5> 
+                    </h5>
                     <p class="card-text">
-                      <small class="text-body-secondary" style="font-size: 15px;">What happens when old PCs are given modern upgrades?</small>
+                      <small class="text-body-secondary" style="font-size: 15px">What happens when old PCs are given modern upgrades?</small>
                     </p>
                   </div>
                 </div>
@@ -219,23 +239,26 @@
             </div>
           </div>
           <div class="w-100 d-lg-none d-md-block"><br /></div>
-          <div class="col">
-            <div class="card mb-3" style="max-width: 540px; border: none;">
+          <div class="col d-flex justify-content-center">
+            <div class="card mb-3" style="max-width: 540px; border: none">
               <div class="row g-0">
-                <div class="col-md-4">
+                <div class="col-4 d-flex justify-content-center">
                   <img
                     src="./assets/images/image-top-laptops.jpg"
                     class="img-fluid rounded-0"
-                    alt = "Top 10 Laptops"/>
+                    alt="Top 10 Laptops"
+                    width="105px"
+                  />
                 </div>
-                <div class="col-md-8">
+                <div class="col">
                   <div class="card-body pt-0">
                     <h3 class="card-title" id="cardNumber">02</h3>
-                    <h5 class="card-text" style="font-weight: 800;">
+                    <h5 class="card-text" style="font-weight: 800">
                       <b>Top 10 Laptops of 2022</b>
                     </h5>
                     <p class="card-text">
-                      <small class="text-body-secondary" style="font-size: 15px;">Our best picks for various needs and budgets.</small>
+                      <small class="text-body-secondary" style="font-size: 15px"
+                        >Our best picks for various needs and budgets.</small>
                     </p>
                   </div>
                 </div>
@@ -243,23 +266,28 @@
             </div>
           </div>
           <div class="w-100 d-lg-none d-md-block"><br /></div>
-          <div class="col" style="margin-right: -30px;">
-            <div class="card mb-3" style="max-width: 540px; border: none;">
-              <div class="row g-0 sm-row-1">
-                <div class="col-md-4 col-sm-1">
+          <div class="col d-flex justify-content-center" style="margin-right: -15px">
+            <div class="card mb-3" style="max-width: 540px; border: none">
+              <div class="row g-0">
+                <div class="col-4 d-flex justify-content-center">
                   <img
                     src="/assets/images/image-gaming-growth.jpg"
                     class="img-fluid rounded-0"
-                    alt="Hand with controller"/>
+                    alt="Hand with controller"
+                    width="105px"
+                  />
                 </div>
-                <div class="col-md-8">
-                  <div class="card-body pt-0 ">
+                <div class="col">
+                  <div class="card-body pt-0">
                     <h3 class="card-title" id="cardNumber">03</h3>
-                    <h5 class="card-text" style="font-weight: 800;">
+                    <h5 class="card-text" style="font-weight: 800">
                       The Growth of Gaming
                     </h5>
                     <p class="card-text">
-                      <small class="text-body-secondary" style="font-size: 15px;"> How the pandemic has sparked fresh opportunities.</small>
+                      <small
+                        class="text-body-secondary"
+                        style="font-size: 15px">
+                        How the pandemic has sparked fresh opportunities.</small>
                     </p>
                   </div>
                 </div>
@@ -269,7 +297,7 @@
         </div>
       </div>
     </div>
-<br><br>
+    <br /><br />
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
