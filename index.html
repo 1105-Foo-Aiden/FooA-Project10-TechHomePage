@@ -25,26 +25,52 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
       p{
         font-size: 22px;
       }
       h1, h3{
         font-weight: 800;
       }
+      #readMoreBtn:hover{
+        background-color: black;
+      }
+      #readMoreBtn{
+        color: white; 
+        background-color: hsl(5, 85%, 63%); 
+        width:50%; height:20%;
+      }
+      h3:hover{
+        color: hsl(35, 77%, 62%);
+        cursor: pointer;
+      }
+      h5:hover{
+        color: hsl(5, 85%, 63%);
+        cursor: pointer;
+      }
+      h4:hover{
+        color: hsl(35, 77%, 62%);
+        cursor: pointer;
+      }
+      #cardNumber{
+        opacity: 40%;
+      }
+      #cardNumber:hover{
+        color: black;
+      }
+      #navBarLink:hover{
+        color: hsl(5, 85%, 63%);
+        cursor: pointer;
+      }
     </style>
   </head>
   <body style="font-family:'Inter', sans-serif;">
     <div class="container">
-      <nav class="navbar bg-body-tertiary fixed-top d-lg-none d-md-block">
+    
+    
+      <!-- Stikcytop navbar start -->
+      <nav class="navbar bg-body-tertiary d-lg-none d-md-block">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">W.</a>
+          <p style="font-size: 60px; font-family: '';"><b>W.</b></p>
           <button
             class="navbar-toggler"
             type="button"
@@ -59,10 +85,7 @@
             tabindex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                Offcanvas
-              </h5>
+            <div class="offcanvas-header"style="display: flex; justify-content:end;">
               <button
                 type="button"
                 class="btn-close"
@@ -75,111 +98,81 @@
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#">New</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a class="dropdown-item" href="#" style="color: coral">Action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Popular</a>
                 </li>
-              </ul>
-              <form class="d-flex mt-3" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit">
-                  Search
-                </button>
-              </form>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Trending</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Categories</a>
+                </li>
             </div>
           </div>
         </div>
       </nav>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <!-- StickyNav end -->
+
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary d-none d-xl-block d-sm-none">
         <div class="container-fluid">
-          <h1 style="font-family: '';">W.</h1>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <p style="font-size:  60px ; font-family: '';"><b>W.</b></p>
           <div
             class="collapse navbar-collapse d-flex justify-content-end"
-            id="navbarNavAltMarkup"
-          >
+            id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">New</a>
-              <a class="nav-link" href="#">Popular</a>
-              <a class="nav-link" aria-disabled="true">Trending</a>
-              <a href="#" class="nav-link">Categorites</a>
+              <a class="nav-link" id="navBarLink" aria-current="page">Home</a>
+              <a class="nav-link" id="navBarLink">New</a>
+              <a class="nav-link" id="navBarLink">Popular</a>
+              <a class="nav-link" id="navBarLink">Trending</a>
+              <a class="nav-link" id="navBarLink">Categorites</a>
             </div>
           </div>
         </div>
       </nav>
-      <div class="row">
-        <div class="col-8">
-          <div class="row">
-            <img src="./assets/images/image-web-3-desktop.jpg" alt="" />
+    <div class="continer-fluid">
+      <div class="row" style="column-gap: 2rem;">
+        <div class="col-lg-8">
+          <div class="row w-100%">
+            <img src="./assets/images/image-web-3-desktop.jpg" alt="Desktop Image" class="img-fluid d-none d-xl-block d-sm-none" style="width: 100%;"/>
+            <img src="./assets/images/image-web-3-mobile.jpg" alt="Mobile hero image" class="img-fluid d-lg-none d-md-block">
           </div>
           <div class="row"><br></div>
           <div class="row">
-            <div class="col">
+            <div class="col-lg-6">
               <h1 style="font-size: 70px;">The Bright Future of Web 3.0?</h1></div>
             <div class="col">
-              <p>
+              <p style="font-size: 18px; line-height: 2;">
                 We dive into the next evolution of the web that claims to put
                 the power of the platforms back into the hands of the people.
                 But is it really fulfilling its promise?
               </p>
               <br />
-              <button
-                class="btn rounded-0"
-                style="color: white; background-color: hsl(5, 85%, 63%)"
-              >
+              <div class="w-100 d-lg-none d-md-block"><br /></div>
+              <button class="btn rounded-0" id="readMoreBtn">
                 READ MORE
               </button>
+              <div class="w-100 d-lg-none d-md-block"><br /></div>
+              <div class="w-100 d-lg-none d-md-block"><br /></div>
+              <div class="w-100 d-lg-none d-md-block"><br /></div>
+              
             </div>
           </div>
         </div>
-        <div class="col p-8" style="background-color: black; color: white">
+      
+          <div class="col p-8" style="background-color: black; color: white; height: max-content;">
+          <br>
           <h1 style="color: hsl(35, 77%, 62%)">New</h1>
           <br>
           <h3>Hydrogen VS Electric Cars</h3>
-          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          <p style="opacity: .5;">Will hydrogen-fueled cars ever catch up to EVs?</p>
           <br>
           <hr />
           <br>
-          <h3>The Downsides of AI Artistry</h3>
-          <p>
+          <h4 style="font-weight: 800;">The Downsides of AI Artistry</h4>
+          <p style="opacity: .5; font-size: 18px">
             What are the possible adverse effects of on-demand AI image
             generation?
           </p>
@@ -187,32 +180,38 @@
           <hr />
           <br>
           <h3>Is VC Funding Drying Up?</h3>
-          <p>
+          <p style="font-size: 20px; opacity: .5;">
             Private funding by VC firms is down 50% YOY. We take a look at what
             that means.
           </p>
-          <br />
+          <br>
         </div>
+      </div>
+        
         <div class="row"><br></div>
+        <div class="w-100 d-lg-none d-md-block"><br /></div>
+        <div class="w-100 d-lg-none d-md-block"><br /></div>
+        <div class="w-100 d-lg-none d-md-block"><br /></div>
         <div class="row">
-          <div class="col">
-            <div class="card mb-3" style="max-width: 540px">
+          <div class="col"style="display: flex; flex-wrap:nowrap;">
+            <div class="card mb-3" style="max-width: 540px; border: none;">
               <div class="row g-0">
                 <div class="col-md-4">
                   <img
                     src="/assets/images/image-retro-pcs.jpg"
-                    class="img-fluid rounded-start"
-                    alt="..."
+                    class="img-fluid rounded-0"
+                    alt="retroPCs"
+                    
                   />
                 </div>
                 <div class="col-md-8">
-                  <div class="card-body">
-                    <h3 class="card-title">01</h3>
-                    <p class="card-text">
+                  <div class="card-body pt-0">
+                    <h3 class="card-title" id="cardNumber">01</h3>
+                    <h5 class="card-text" style="font-weight: 800;">
                       <b>Reviving Retro PCs</b>
-                    </p>
+                    </h5> 
                     <p class="card-text">
-                      <small class="text-body-secondary">What happens when old PCs are given modern upgrades?</small>
+                      <small class="text-body-secondary" style="font-size: 15px;">What happens when old PCs are given modern upgrades?</small>
                     </p>
                   </div>
                 </div>
@@ -221,24 +220,22 @@
           </div>
           <div class="w-100 d-lg-none d-md-block"><br /></div>
           <div class="col">
-            <div class="card mb-3" style="max-width: 540px">
+            <div class="card mb-3" style="max-width: 540px; border: none;">
               <div class="row g-0">
                 <div class="col-md-4">
                   <img
                     src="./assets/images/image-top-laptops.jpg"
-                    class="img-fluid rounded-start"
-                    alt="..."/>
-                    <img src="./assets/images/image-web-3-mobile.jpg" alt="Mobile hero image" class="w-100 d-lg-none d-md-block">
+                    class="img-fluid rounded-0"
+                    alt = "Top 10 Laptops"/>
                 </div>
                 <div class="col-md-8">
-                  <div class="card-body">
-                    <h3 class="card-title">02</h3>
-                    <p class="card-text">
+                  <div class="card-body pt-0">
+                    <h3 class="card-title" id="cardNumber">02</h3>
+                    <h5 class="card-text" style="font-weight: 800;">
                       <b>Top 10 Laptops of 2022</b>
-                    </p>
+                    </h5>
                     <p class="card-text">
-                      <small class="text-body-secondary"
-                        >Our best picks for various needs and budgets.</small>
+                      <small class="text-body-secondary" style="font-size: 15px;">Our best picks for various needs and budgets.</small>
                     </p>
                   </div>
                 </div>
@@ -246,26 +243,23 @@
             </div>
           </div>
           <div class="w-100 d-lg-none d-md-block"><br /></div>
-          <div class="col">
-            <div class="w-100 d-lg-none d-md-block"><br /></div>
-            <div class="card mb-3" style="max-width: 540px">
-              <div class="row g-0">
-                <div class="col-md-4">
+          <div class="col" style="margin-right: -52px;">
+            <div class="card mb-3" style="max-width: 540px; border: none;">
+              <div class="row g-0 sm-row-1">
+                <div class="col-md-4 col-sm-1">
                   <img
                     src="/assets/images/image-gaming-growth.jpg"
-                    class="img-fluid rounded-start"
-                    alt="..."
-                  />
+                    class="img-fluid rounded-0"
+                    alt="Hand with controller"/>
                 </div>
-
                 <div class="col-md-8">
-                  <div class="card-body">
-                    <h3 class="card-title">03</h3>
-                    <h4 class="card-text">
-                      <b>The Growth of Gaming</b>
+                  <div class="card-body pt-0 ">
+                    <h3 class="card-title" id="cardNumber">03</h3>
+                    <h5 class="card-text" style="font-weight: 800;">
+                      The Growth of Gaming
                     </h5>
                     <p class="card-text">
-                      <small class="text-body-secondary"> How the pandemic has sparked fresh opportunities.</small>
+                      <small class="text-body-secondary" style="font-size: 15px;"> How the pandemic has sparked fresh opportunities.</small>
                     </p>
                   </div>
                 </div>
@@ -274,11 +268,8 @@
           </div>
         </div>
       </div>
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
-      </div>
     </div>
+<br><br>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
